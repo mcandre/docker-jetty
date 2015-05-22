@@ -1,4 +1,4 @@
-IMAGE=mcandre/docker-jetty
+IMAGE=mcandre/docker-jetty:6
 
 LOCALHOST=$$(boot2docker ip)
 
