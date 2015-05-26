@@ -8,8 +8,8 @@ https://registry.hub.docker.com/u/mcandre/docker-jetty/
 
 ```
 $ make
-docker build -t mcandre/docker-jetty:6 .
-docker run -d -p 8080:8080 mcandre/docker-jetty:6
+docker build -t mcandre/docker-jetty:8 .
+docker run -d -p 8080:8080 mcandre/docker-jetty:8
 0017ce21a070abf443877382176a943f0d28ef31d46636d94576369629bf0d80
 sleep 2
 time curl -s http://$(boot2docker ip):8080 | head
