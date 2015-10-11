@@ -12,7 +12,7 @@ docker build -t mcandre/docker-jetty .
 docker run -d -p 8080:8080 mcandre/docker-jetty
 0017ce21a070abf443877382176a943f0d28ef31d46636d94576369629bf0d80
 sleep 2
-time curl -s http://$(boot2docker ip):8080 | head
+time curl -s http://$(docker-machine ip default):8080 | head
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
@@ -53,8 +53,7 @@ $ sudo yum install docker-io curl
 ## non-Linux
 
 * [VirtualBox](https://www.virtualbox.org/)
-* [Vagrant](https://www.vagrantup.com/)
-* [boot2docker](http://boot2docker.io/)
+* [Docker Toolbox](https://www.docker.com/toolbox)
 
 ### Mac OS X
 
@@ -63,8 +62,8 @@ $ sudo yum install docker-io curl
 * [brew-cask](http://caskroom.io/)
 
 ```
-$ brew cask install virtualbox vagrant
-$ brew install boot2docker curl
+$ brew cask install dockertoolbox
+$ brew install curl
 ```
 
 ### Windows
@@ -72,5 +71,7 @@ $ brew install boot2docker curl
 * [Chocolatey](https://chocolatey.org/)
 
 ```
-> chocolatey install docker curl make
+> chocolatey install virtualbox curl make
 ```
+
+* [DockerToolbox-1.8.2c.exe](https://github.com/docker/toolbox/releases/download/v1.8.2c/DockerToolbox-1.8.2c.exe)

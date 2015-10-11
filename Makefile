@@ -1,6 +1,6 @@
 IMAGE=mcandre/docker-jetty
 
-LOCALHOST=$$(boot2docker ip)
+LOCALHOST=$$(docker-machine ip default)
 
 ifneq ($(OS),Windows_NT)
 	UNAME=$(shell uname -s)
