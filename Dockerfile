@@ -1,7 +1,7 @@
 FROM java
 MAINTAINER Andrew Pennebaker <andrew.pennebaker@gmail.com>
-ADD jetty.sh /
+COPY jetty.sh /
 RUN apt-get update && \
     apt-get install -y jetty8
 EXPOSE 8080
-ENTRYPOINT /jetty.sh
+ENTRYPOINT ["/jetty.sh"]
